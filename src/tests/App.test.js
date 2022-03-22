@@ -25,7 +25,7 @@ describe('Testes referentes ao componente App.js', () => {
     expect(history.location.pathname).toBe('/');
   });
 
-  it(`Teste se a aplicação é redirecionada para a página de About,
+  it(`Testa se a aplicação é redirecionada para a página de About,
   na URL /about, ao clicar no link About da barra de navegação.`, () => {
     const { history } = renderWithRouter(<App />);
 
@@ -34,7 +34,7 @@ describe('Testes referentes ao componente App.js', () => {
     expect(history.location.pathname).toBe('/about');
   });
 
-  it(`Teste se a aplicação é redirecionada para a página de Pokémons Favoritados,
+  it(`Testa se a aplicação é redirecionada para a página de Pokémons Favoritados,
   na URL /favorites, ao clicar no link Favorite Pokémons da barra de navegação.`, () => {
     const { history } = renderWithRouter(<App />);
 
@@ -43,7 +43,7 @@ describe('Testes referentes ao componente App.js', () => {
     expect(history.location.pathname).toBe('/favorites');
   });
 
-  it(`Teste se a aplicação é redirecionada para a página Not Found ao entrar em uma
+  it(`Testa se a aplicação é redirecionada para a página Not Found ao entrar em uma
   URL desconhecida.`, () => {
     const { history } = renderWithRouter(<App />);
 

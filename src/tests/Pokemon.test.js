@@ -8,7 +8,7 @@ import App from '../App';
 
 const link = 'More details';
 
-describe('', () => {
+describe('Testes referentes ao componente Pokemon.js', () => {
   it('Testa se é renderizado um card com as informações de determinado pokémon', () => {
     renderWithRouter(<Pokemon pokemon={ pokemons[0] } isFavorite={ false } />);
 

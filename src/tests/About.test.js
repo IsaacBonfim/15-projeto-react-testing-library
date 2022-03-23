@@ -15,13 +15,13 @@ describe('Testes referentes ao componente About.js', () => {
   it('Testa se a página contém dois parágrafos com texto sobre a Pokédex', () => {
     renderWithRouter(<About />);
 
-    const text1 = /This application simulates a Pokédex/igm;
-    const line1 = screen.getByText(text1);
-    expect(line1).toBeInTheDocument();
+    const firstText = /This application simulates a Pokédex/igm;
+    const firstLine = screen.getByText(firstText);
+    expect(firstLine).toBeInTheDocument();
 
-    const text2 = /One can filter Pokémons by type/igm;
-    const line2 = screen.getByText(text2);
-    expect(line2).toBeInTheDocument();
+    const secondText = /One can filter Pokémons by type/igm;
+    const secondLine = screen.getByText(secondText);
+    expect(secondLine).toBeInTheDocument();
   });
 
   it('Testa se a página contém a imagem de uma Pokédex', () => {
